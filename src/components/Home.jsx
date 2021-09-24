@@ -9,7 +9,7 @@ const Home = () => {
   const fetchCurrent = async () => {
     try {
       let response = await fetch(`
-      api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}
+      http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}
         `);
       if (response.ok) {
         console.log("Response is ok");
